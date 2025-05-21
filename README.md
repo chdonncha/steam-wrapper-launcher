@@ -5,33 +5,32 @@ This tool is perfect for launching modded or custom game executables that would 
 
 ## ✅ When to Use
 
-Use this wrapper when:
+Steam doesn't always play nicely with modded or replacement `.exe` files. This wrapper is useful when:
 
-- You're launching a game or mod via Steam and it's failing because:
-  - You're passing `%command%` in the Steam Launch Options (which adds the original game .exe path as an argument)
-  - You're using a custom `.exe` that cannot handle arguments like paths
-  - You've replaced the original game `.exe`, but Steam still tries to run or reference the original path internally
+- Your mod launcher crashes or misbehaves when launched via Steam
+- You've added `%command%` to the Launch Options and your executable can't handle the injected argument
+- You're using a custom `.exe` that wasn't designed to accept command-line parameters
+- You've replaced the original game executable, but Steam still tries to reference the old one and fails
+
+This tool works as a drop-in replacement that safely strips out any unexpected arguments before handing off to your real launcher.
 
 ### 💡 Example Use Case: Dungeon Keeper Gold with KeeperFX
 If you're using KeeperFX - a fan-made modern launcher for Dungeon Keeper - Steam may break the launch process when trying to run it directly or through a custom shortcut. This wrapper avoids those issues by stripping out any injected parameters before handing off control to KeeperFX.
 
-## 🔧 What It Does
+## 🚀 What It Does (and How)
 
-- Ignores all command-line arguments passed by Steam
-- Launches any target `.exe` defined in a `launch_path.txt` file
-- Silently runs with no terminal window (WinExe mode)
-- Fully portable: builds into a single, self-contained `.exe` file
-- Drop-in replacement for existing Steam game executables
+This wrapper acts as a silent middleman between Steam and your real game or mod launcher. It's designed to prevent crashes caused by unexpected launch arguments, such as Steam appending the original `.exe` path or other undocumented parameters.
 
+Here’s what it does:
 
-## 🚀 How It Works
+1. **Ignores all command-line arguments** passed by Steam
+2. **Reads the actual launcher path** from a `launch_path.txt` file in the same folder
+3. **Starts the target `.exe`** with no arguments
+4. **Runs silently**, with no terminal window (WinExe mode)
+5. **Waits briefly** after launch so Steam doesn't think the process crashed
+6. **Fully portable** — builds into a single, self-contained `.exe` file
+7. Works as a **drop-in replacement** for original Steam game executables
 
-Steam often passes arguments like `%command%` to executables — modded launchers often don’t support these and throw errors. This wrapper acts as a "middleman" that:
-
-1. Ignores all parameters
-2. Reads the real game/mod executable path from `launch_path.txt`
-3. Launches the target `.exe` silently
-4. Waits briefly so Steam doesn't think it crashed
 
 ## 🛠️ How to Build and Use
 
