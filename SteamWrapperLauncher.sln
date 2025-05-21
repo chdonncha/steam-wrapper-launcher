@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36109.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteamWrapperLauncher", "SteamWrapperLauncher\SteamWrapperLauncher.csproj", "{C285E1CE-EF48-4FC0-A080-AE4ED9DA9A09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C285E1CE-EF48-4FC0-A080-AE4ED9DA9A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C285E1CE-EF48-4FC0-A080-AE4ED9DA9A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C285E1CE-EF48-4FC0-A080-AE4ED9DA9A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C285E1CE-EF48-4FC0-A080-AE4ED9DA9A09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9629BDB7-23F9-4FE0-A8D2-216E8324A744}
+	EndGlobalSection
+EndGlobal
