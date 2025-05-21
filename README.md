@@ -42,10 +42,16 @@ Here’s what it does:
 
 **Step 1: Clone this repository**
 
-```sh
-git clone https://github.com/chdonncha/steam-wrapper-launcher.git
-cd steam-wrapper-launcher
-```
+You can either:
+
+- Clone this repository using Git:
+
+  ```sh
+  git clone https://github.com/chdonncha/steam-wrapper-launcher.git
+  cd steam-wrapper-launcher
+  ```
+
+- **Or [download the ZIP](https://github.com/chdonncha/steam-wrapper-launcher/archive/refs/heads/master.zip)** directly from GitHub and extract it to a folder of your choice.
 
 **Step 2: Publish the executable**
 
