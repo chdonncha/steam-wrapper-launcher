@@ -64,9 +64,3 @@ You can now drop that into any Steam game folder and use the included `launch_pa
 - Steam launches a game with unexpected parameters and it crashes or misbehaves
 - You use a mod launcher that can’t accept Steam’s `%command%`
 - You want a clean, silent handoff from Steam to your real game launcher
-
----
-
-## 📝 License
-
-MIT — free to use, modify, and redistribute.
